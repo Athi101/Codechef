@@ -4,12 +4,12 @@ class Codechef
 {
 	public static void main (String[] args) throws java.lang.Exception
 	{
-	   Scanner scan = new Scanner(System.in);
-	   int t = scan.nextInt();
+	   Scanner sc = new Scanner(System.in);
+	   int t = sc.nextInt();
 	   for(int i=0;i<t;i++)
 	   {
-	       int a = scan.nextInt();
-	       int b = scan.nextInt();
+	       int a = sc.nextInt();
+	       int b = sc.nextInt();
 	       
 	       if(a > b)
 	       System.out.println(">");
@@ -18,5 +18,6 @@ class Codechef
 	       else
 	       System.out.println("=");
 	   }
+		sc.close; #better to close the scanner to prevent memory leakage
 	}
 }
